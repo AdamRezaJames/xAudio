@@ -5,6 +5,8 @@
   import TailwindIndicator from "@/lib/components/ui/tailwind-indicator.svelte";
 </script>
 
-{@render children?.()}
-<Sidebar />
+<div class="grid grid-cols-[auto,1fr]">
+  <Sidebar />
+  {@render children?.()}
+</div>
 <TailwindIndicator />
